@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:id="@+id/weatherData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Current Weather"
+        android:textColor="#FFFFFF"
+        android:fontFamily="cursive"
+        android:textSize="27sp"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weatherData"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFFFF"
+        android:text="Temperature" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/temperature"
+        android:layout_below="@+id/temperature"
+        android:textColor="#FFFFFF"
+        android:text="Humidity" />
+
+    <TextView
+        android:id="@+id/windSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/temperature"
+        android:layout_below="@+id/humidity"
+        android:textColor="#FFFFFF"
+        android:text="Wind Speed" />
+
+    <TextView
+        android:id="@+id/precip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/temperature"
+        android:layout_below="@+id/windSpeed"
+        android:textColor="#FFFFFF"
+        android:text="Precipitation" />
+
+    <TextView
+        android:id="@+id/avg48Hrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/precip"
+        android:layout_alignStart="@+id/temperature"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:text="Avg Next 48 Hours" />
+
+    <TextView
+        android:id="@+id/currentLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avg48Hrs"
+        android:layout_alignStart="@+id/temperature"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/crToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/currentLoc"
+        android:layout_marginTop="40dp"
+        android:background="#9FDEE5"
+        android:text="Back" />
+
+
+</RelativeLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:id="@+id/weatherForecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Weather Forecast"
+        android:fontFamily="cursive"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/next5Hrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weatherForecast"
+        android:layout_centerHorizontal="true"
+        android:text="Hourly"
+        android:layout_marginTop="3dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+
+    <TextView
+        android:id="@+id/temp1Hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/next5Hrs"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Temp in 1 Hr"/>
+
+    <TextView
+        android:id="@+id/temp2Hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp1Hr"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Temp in 2 Hrs"/>
+
+    <TextView
+        android:id="@+id/temp3Hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp2Hr"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Temp in 3 Hrs"/>
+
+    <TextView
+        android:id="@+id/temp4Hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp3Hr"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Temp in 4 Hrs"/>
+
+    <TextView
+        android:id="@+id/temp5Hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp4Hr"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Temp in 5 Hrs"/>
+
+    <TextView
+        android:id="@+id/weeklyForecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp5Hr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Weekly"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+
+    <TextView
+        android:id="@+id/temp1DayLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weeklyForecast"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"
+        android:text="Low Temp Day 1" />
+
+    <TextView
+        android:id="@+id/temp1DayHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/temp2DayHigh"
+        android:layout_below="@+id/weeklyForecast"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFFFFF"
+        android:text="High Temp Day 1" />
+
+    <TextView
+        android:id="@+id/temp2DayLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp1DayLow"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Low Temp Day 2"/>
+
+    <TextView
+        android:id="@+id/temp2DayHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/temp3DayHigh"
+        android:layout_below="@+id/temp1DayHigh"
+        android:textColor="#FFFFFF"
+        android:text="High Temp Day 2" />
+
+    <TextView
+        android:id="@+id/temp3DayLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp2DayLow"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Low Temp Day 3"/>
+
+    <TextView
+        android:id="@+id/temp3DayHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/temp4DayHigh"
+        android:layout_below="@+id/temp2DayHigh"
+        android:textColor="#FFFFFF"
+        android:text="High Temp Day 3" />
+
+    <TextView
+        android:id="@+id/temp4DayLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp3DayLow"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Low Temp Day 4"/>
+
+    <TextView
+        android:id="@+id/temp4DayHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/temp5DayHigh"
+        android:layout_below="@+id/temp3DayHigh"
+        android:textColor="#FFFFFF"
+        android:text="High Temp Day 4" />
+
+    <TextView
+        android:id="@+id/temp5DayLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/temp4DayLow"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Low Temp Day 5" />
+
+    <TextView
+        android:id="@+id/temp5DayHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/temp7DayHigh"
+        android:layout_below="@+id/temp4DayHigh"
+        android:textColor="#FFFFFF"
+        android:text="High Temp Day 5" />
+
+    <TextView
+        android:id="@+id/temp6DayLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp5DayLow"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Low Temp Day 6"/>
+
+    <TextView
+        android:id="@+id/temp6DayHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/temp5DayHigh"
+        android:layout_below="@+id/temp5DayHigh"
+        android:textColor="#FFFFFF"
+        android:text="High Temp Day 6" />
+
+    <TextView
+        android:id="@+id/temp7DayLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fcToMain"
+        android:layout_below="@+id/temp6DayLow"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Low Temp Day 7" />
+
+    <TextView
+        android:id="@+id/temp7DayHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/temp6DayHigh"
+        android:textColor="#FFFFFF"
+        android:text="High Temp Day 7" />
+
+    <TextView
+        android:id="@+id/presentLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/temp7DayHigh"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/fcToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp7DayHigh"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="#9FDEE5"
+        android:text="Back" />
+</RelativeLayout>
